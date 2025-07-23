@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>S3S GURUKUL</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Noto+Sans+Devanagari&display=swap" rel="stylesheet" />
+  
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f9f9f9;
+    }
+    /* Carousel Caption Styling */
+    .carousel-caption {
+      background: rgba(0, 0, 0, 0.55);
+      padding: 25px 30px;
+      border-radius: 12px;
+      max-width: 80%;
+      left: 10%;
+      right: 10%;
+    }
+    .carousel-caption h1 {
+      font-size: 2.8rem;
+      font-weight: 600;
+      color: #fff;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+    }
+    .carousel-caption .tagline {
+      font-family: 'Noto Sans Devanagari', sans-serif;
+      font-size: 1.5rem;
+      color: #ffdf00;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+    }
+    .btn-warning {
+      font-weight: 600;
+      font-size: 1.1rem;
+      padding: 12px 28px;
+      border-radius: 50px;
+      box-shadow: 0 4px 8px rgba(255, 193, 7, 0.5);
+      transition: all 0.3s ease;
+    }
+    .btn-warning:hover {
+      background-color: #e6ac00;
+      box-shadow: 0 6px 14px rgba(230, 172, 0, 0.8);
+    }
+    
+    /* Section Padding */
+    .section {
+      padding: 60px 0;
+    }
+    /* Footer */
+    .footer {
+      background-color: #343a40;
+      color: white;
+      padding: 20px 0;
+      font-size: 0.9rem;
+    }
+    /* Navbar brand font weight */
+    .navbar-brand {
+      font-weight: 700;
+      font-size: 1.5rem;
+    }
+    /* Navbar links */
+    .nav-link {
+      color: white !important;
+      font-weight: 600;
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+  <div class="container">
+    <a class="navbar-brand" href="#">S3S GURUKUL</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navmenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#courses">Courses</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000" style="margin-top: 56px;">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1600&q=80" class="d-block w-100" alt="Students reading" style="height: 600px; object-fit: cover;">
+      <div class="carousel-caption d-none d-md-block">
+        <h1>Welcome to S3S GURUKUL</h1>
+        <p class="tagline">गुरूकुल की यही पहचान कम दाम और ज्यादा ज्ञान</p>
+        <a href="#courses" class="btn btn-warning mt-3">Explore Courses</a>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1600&q=80" class="d-block w-100" alt="Students discussing" style="height: 600px; object-fit: cover;">
+      <div class="carousel-caption d-none d-md-block">
+        <h1>Learn Through Discussion</h1>
+        <p class="tagline">Collaboration and knowledge go hand in hand</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1600&q=80" class="d-block w-100" alt="Classroom teaching" style="height: 600px; object-fit: cover;">
+      <div class="carousel-caption d-none d-md-block">
+        <h1>Personalized Guidance</h1>
+        <p class="tagline">Dedicated teachers, focused learning</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Carousel Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev" aria-label="Previous Slide">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next" aria-label="Next Slide">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+
+
+<!-- About Section -->
+<section class="section" id="about">
+  <div class="container text-center">
+    <h2 class="mb-4">About Us</h2>
+    <p class="lead">S3S Gurukul is a modern-day learning center with a traditional approach to quality education. We believe in empowering students with deep knowledge at affordable fees.</p>
+  </div>
+</section>
+
+<!-- Courses Section -->
+<section class="section bg-light" id="courses">
+  <div class="container text-center">
+    <h2 class="mb-4">Our Courses</h2>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">School Coaching (Class 6–12)</h5>
+            <p class="card-text">Expert coaching for all subjects including Maths, Science, English & more.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Competitive Exams</h5>
+            <p class="card-text">Prepare for SSC, Banking, Railway, NDA, and more with our structured courses.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Skill Development</h5>
+            <p class="card-text">Spoken English, Personality Development, Basic Computer Training & more.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section class="section" id="contact">
+  <div class="container text-center">
+    <h2 class="mb-4">Contact Us</h2>
+    <p class="lead">📞 Call/WhatsApp: +91-8766320545</p>
+    <p class="lead">📍 Address: Near Main Market, Your City, India</p>
+    <a href="https://api.whatsapp.com/send?phone=918766320545&text=Hello%21%20I%20want%20to%20inquire%20about%20S3S%20Gurukul%20courses." target="_blank" rel="noopener noreferrer" class="btn btn-success">
+  Chat on WhatsApp
+</a>
+
+
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer text-center">
+  <div class="container">
+    <p class="mb-1">© 2025 S3S GURUKUL. All rights reserved.</p>
+    <small>Designed with ❤️ using Bootstrap</small>
+  </div>
+</footer>
+
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
